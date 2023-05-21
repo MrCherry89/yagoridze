@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header class="header header_black-bg">
+    <header class="header">
       <div class="header__menu-wrap">
         <div class="header__menu-wrap-top">
           <a href="index.html" class="header__menu-wrap-top-logo"
@@ -552,340 +552,272 @@
       </div>
     </header>
 
-    <div class="delivery-restaurant">
-      <div class="delivery-restaurant__info">
-        <h2 class="delivery-restaurant__info-title">
-          Ресторан доставки
-          <span class="delivery-restaurant__info-title_orange">Ягоридзе</span>
-        </h2>
-        <p class="delivery-restaurant__info-subtitle">
-          <img
-            src="img/chef-icon.svg"
-            alt=""
-            class="delivery-restaurant__info-subtitle-img"
+    <div class="catalog">
+      <ul class="breadcromb-menu">
+        <li><a href="#">Главная</a></li>
+        <li><span>Меню</span></li>
+      </ul>
+      <h1 class="catalog__title">Меню Ягоридзе</h1>
+      <div class="catalog__search">
+        <form class="catalog__search-form">
+          <input
+            type="text"
+            placeholder="Поиск по меню"
+            class="catalog__search-input"
           />
-          Готовим по фирменным рецептам шеф-повара из Грузии - Ягора Мирабяна
-        </p>
+          <button type="button" class="catalog__search-btn red-btn">
+            Найти
+          </button>
+        </form>
       </div>
-      <div class="delivery-restaurant__slider-wrap">
-        <div class="delivery-restaurant__slider-navigation">
-          <button type="button" class="slick-prev"></button>
-          <button type="button" class="slick-next"></button>
+      <div class="catalog__info-links">
+        <a href="#" class="catalog__info-link">
+          <img src="img/pdf-icon.svg" alt="" class="catalog__info-link-img" />
+          <span class="catalog__info-link-text">Меню ресторана</span>
+        </a>
+        <a href="#" class="catalog__info-link">
+          <img src="img/pdf-icon.svg" alt="" class="catalog__info-link-img" />
+          <span class="catalog__info-link-text">Детское меню</span>
+        </a>
+        <a href="#" class="catalog__info-link">
+          <img src="img/pdf-icon.svg" alt="" class="catalog__info-link-img" />
+          <span class="catalog__info-link-text">Бизнес ланчи</span>
+        </a>
+      </div>
+      <div class="catalog__items-wrap">
+        <div class="catalog__items">
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon1.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Мясо на мангале</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon2.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Мясо в тандыре</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon3.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Хинкали</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon4.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Закуски</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon5.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Овощи на мангале</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon6.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Мясо маринованное</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon7.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Пицца из печи</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon8.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Свежая выпечка</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img src="img/product-icon9.svg" alt="" class="catalog__item-img" />
+            <span class="catalog__item-text">Шаурма</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img
+              src="img/product-icon10.svg"
+              alt=""
+              class="catalog__item-img"
+            />
+            <span class="catalog__item-text">Десерты</span>
+          </a>
+          <a href="#" class="catalog__item">
+            <img
+              src="img/product-icon11.svg"
+              alt=""
+              class="catalog__item-img"
+            />
+            <span class="catalog__item-text">Напитки</span>
+          </a>
         </div>
-        <div class="delivery-restaurant__slider">
-          <div class="delivery-restaurant__slider-item">
-            <div
-              class="delivery-restaurant__slider-item-bg"
-              style="
-                background-image: url(img/delivery-restaurant-slider-img1.png);
-              "
-            ></div>
-            <span class="delivery-restaurant__persent">20%</span>
-            <span class="delivery-restaurant__discount"
-              >Скидка на все пури с 12:00 до 16:00</span
-            >
-            <div class="delivery-restaurant__slider-item-texts">
-              <span class="delivery-restaurant__promocode">Промокод</span>
-              <span class="delivery-restaurant__promocode-style"
-                >#Хочупури</span
-              >
+      </div>
+    </div>
+
+    <div class="orders">
+      <div class="orders__items">
+        <div class="order__item">
+          <a href="#" class="order__item-img">
+            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
+            <span class="order__item-new">new</span>
+          </a>
+          <span class="order__item-name">Плов из баранины</span>
+          <span class="order__item-price-text">300 гр</span>
+          <span class="order__item-text"
+            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+            помодоро</span
+          >
+          <div class="order__item-price">
+            <div class="order__item-prices">
+              <span class="order__item-new-price">325 р</span>
+              <span class="order__item-old-price">460 р</span>
             </div>
+            <a href="#" class="red-btn">Заказать</a>
           </div>
-          <div class="delivery-restaurant__slider-item">
-            <div
-              class="delivery-restaurant__slider-item-bg"
-              style="
-                background-image: url(img/delivery-restaurant-slider-img2.png);
-              "
-            ></div>
-            <span class="delivery-restaurant__persent">20%</span>
-            <span class="delivery-restaurant__discount"
-              >Скидка на все пури с 12:00 до 16:00</span
-            >
-            <div class="delivery-restaurant__slider-item-texts">
-              <span class="delivery-restaurant__promocode">Промокод</span>
-              <span class="delivery-restaurant__promocode-style"
-                >#Хочупури</span
-              >
+        </div>
+        <div class="order__item">
+          <a href="#" class="order__item-img">
+            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
+            <span class="order__item-new">new</span>
+          </a>
+          <span class="order__item-name">Плов из баранины</span>
+          <span class="order__item-price-text">300 гр</span>
+          <span class="order__item-text"
+            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+            помодоро</span
+          >
+          <div class="order__item-price">
+            <div class="order__item-prices">
+              <span class="order__item-new-price">325 р</span>
+              <span class="order__item-old-price">460 р</span>
             </div>
+            <a href="#" class="red-btn">Заказать</a>
           </div>
-          <div class="delivery-restaurant__slider-item">
-            <div
-              class="delivery-restaurant__slider-item-bg"
-              style="
-                background-image: url(img/delivery-restaurant-slider-img1.png);
-              "
-            ></div>
-            <span class="delivery-restaurant__persent">20%</span>
-            <span class="delivery-restaurant__discount"
-              >Скидка на все пури с 12:00 до 16:00</span
-            >
-            <div class="delivery-restaurant__slider-item-texts">
-              <span class="delivery-restaurant__promocode">Промокод</span>
-              <span class="delivery-restaurant__promocode-style"
-                >#Хочупури</span
-              >
+        </div>
+        <div class="order__item">
+          <a href="#" class="order__item-img">
+            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
+            <span class="order__item-new">new</span>
+          </a>
+          <span class="order__item-name">Плов из баранины</span>
+          <span class="order__item-price-text">300 гр</span>
+          <span class="order__item-text"
+            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+            помодоро</span
+          >
+          <div class="order__item-price">
+            <div class="order__item-prices">
+              <span class="order__item-new-price">325 р</span>
+              <span class="order__item-old-price">460 р</span>
             </div>
+            <a href="#" class="red-btn">Заказать</a>
           </div>
-          <div class="delivery-restaurant__slider-item">
-            <div
-              class="delivery-restaurant__slider-item-bg"
-              style="
-                background-image: url(img/delivery-restaurant-slider-img2.png);
-              "
-            ></div>
-            <span class="delivery-restaurant__persent">20%</span>
-            <span class="delivery-restaurant__discount"
-              >Скидка на все пури с 12:00 до 16:00</span
-            >
-            <div class="delivery-restaurant__slider-item-texts">
-              <span class="delivery-restaurant__promocode">Промокод</span>
-              <span class="delivery-restaurant__promocode-style"
-                >#Хочупури</span
-              >
+        </div>
+        <div class="order__item">
+          <a href="#" class="order__item-img">
+            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
+            <span class="order__item-new">new</span>
+          </a>
+          <span class="order__item-name">Плов из баранины</span>
+          <span class="order__item-price-text">300 гр</span>
+          <span class="order__item-text"
+            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+            помодоро</span
+          >
+          <div class="order__item-price">
+            <div class="order__item-prices">
+              <span class="order__item-new-price">325 р</span>
+              <span class="order__item-old-price">460 р</span>
             </div>
+            <a href="#" class="red-btn">Заказать</a>
+          </div>
+        </div>
+        <div class="order__item">
+          <a href="#" class="order__item-img">
+            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
+            <span class="order__item-new">new</span>
+          </a>
+          <span class="order__item-name">Плов из баранины</span>
+          <span class="order__item-price-text">300 гр</span>
+          <span class="order__item-text"
+            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+            помодоро</span
+          >
+          <div class="order__item-price">
+            <div class="order__item-prices">
+              <span class="order__item-new-price">325 р</span>
+              <span class="order__item-old-price">460 р</span>
+            </div>
+            <a href="#" class="red-btn">Заказать</a>
+          </div>
+        </div>
+        <div class="order__item">
+          <a href="#" class="order__item-img">
+            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
+            <span class="order__item-new">new</span>
+          </a>
+          <span class="order__item-name">Плов из баранины</span>
+          <span class="order__item-price-text">300 гр</span>
+          <span class="order__item-text"
+            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+            помодоро</span
+          >
+          <div class="order__item-price">
+            <div class="order__item-prices">
+              <span class="order__item-new-price">325 р</span>
+              <span class="order__item-old-price">460 р</span>
+            </div>
+            <a href="#" class="red-btn">Заказать</a>
+          </div>
+        </div>
+        <div class="order__item">
+          <a href="#" class="order__item-img">
+            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
+            <span class="order__item-new">new</span>
+          </a>
+          <span class="order__item-name">Плов из баранины</span>
+          <span class="order__item-price-text">300 гр</span>
+          <span class="order__item-text"
+            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+            помодоро</span
+          >
+          <div class="order__item-price">
+            <div class="order__item-prices">
+              <span class="order__item-new-price">325 р</span>
+              <span class="order__item-old-price">460 р</span>
+            </div>
+            <a href="#" class="red-btn">Заказать</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="order-wrap">
-      <div class="order">
-        <h2 class="order__title">Блюда недели</h2>
-        <div class="order__slider">
-          <div class="order__item">
-            <a href="#" class="order__item-img">
-              <img
-                class="order__item-bg"
-                src="img/order-slider-img.jpg"
-                alt=""
-              />
-              <span class="order__item-new">new</span>
-            </a>
-            <span class="order__item-name">Плов из баранины</span>
-            <span class="order__item-price-text">300 гр</span>
-            <span class="order__item-text"
-              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-              помодоро</span
-            >
-            <div class="order__item-price">
-              <div class="order__item-prices">
-                <span class="order__item-new-price">325 р</span>
-                <span class="order__item-old-price">460 р</span>
-              </div>
-              <a href="#" class="red-btn">Заказать</a>
-            </div>
-          </div>
-          <div class="order__item active">
-            <a href="#" class="order__item-img">
-              <img
-                class="order__item-bg"
-                src="img/order-slider-img.jpg"
-                alt=""
-              />
-              <span class="order__item-new">new</span>
-            </a>
-            <span class="order__item-name">Плов из баранины</span>
-            <span class="order__item-price-text">300 гр</span>
-            <span class="order__item-text"
-              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-              помодоро</span
-            >
-            <div class="order__item-price">
-              <div class="order__item-prices">
-                <span class="order__item-new-price">325 р</span>
-                <span class="order__item-old-price">460 р</span>
-              </div>
-              <a href="#" class="red-btn">Заказать</a>
-            </div>
-          </div>
-          <div class="order__item">
-            <a href="#" class="order__item-img">
-              <img
-                class="order__item-bg"
-                src="img/order-slider-img.jpg"
-                alt=""
-              />
-              <span class="order__item-new">new</span>
-            </a>
-            <span class="order__item-name">Плов из баранины</span>
-            <span class="order__item-price-text">300 гр</span>
-            <span class="order__item-text"
-              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-              помодоро</span
-            >
-            <div class="order__item-price">
-              <div class="order__item-prices">
-                <span class="order__item-new-price">325 р</span>
-                <span class="order__item-old-price">460 р</span>
-              </div>
-              <a href="#" class="red-btn">Заказать</a>
-            </div>
-          </div>
-          <div class="order__item">
-            <a href="#" class="order__item-img">
-              <img
-                class="order__item-bg"
-                src="img/order-slider-img.jpg"
-                alt=""
-              />
-              <span class="order__item-new">new</span>
-            </a>
-            <span class="order__item-name">Плов из баранины</span>
-            <span class="order__item-price-text">300 гр</span>
-            <span class="order__item-text"
-              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-              помодоро</span
-            >
-            <div class="order__item-price">
-              <div class="order__item-prices">
-                <span class="order__item-new-price">325 р</span>
-                <span class="order__item-old-price">460 р</span>
-              </div>
-              <a href="#" class="red-btn">Заказать</a>
-            </div>
-          </div>
+    <div class="information">
+      <div class="information__items">
+        <div class="information__item">
+          <img
+            src="img/information-img1.svg"
+            alt=""
+            class="information__item-img"
+          />
+          <h4 class="information__item-title">География</h4>
+          <p class="information__item-text">
+            Доставляем заказы во все населённые пункты Берёзовского района, а
+            также Красноярск, Дивногорск и Сосновоборск
+          </p>
         </div>
-      </div>
-    </div>
-
-    <div class="products">
-      <a href="#" class="products__item products__item1">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg1.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon1.svg" alt="" />
-          <span class="products__item-text">Мясо на мангале</span>
+        <div class="information__item">
+          <img
+            src="img/information-img2.svg"
+            alt=""
+            class="information__item-img"
+          />
+          <h4 class="information__item-title">Логистика</h4>
+          <p class="information__item-text">
+            Команда call-центра выстраивает грамотную логистику заказов, а
+            оператор отслеживает маршрут Вашей доставки до момента передачи
+          </p>
         </div>
-      </a>
-      <a href="#" class="products__item products__item2">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg2.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon3.svg" alt="" />
-          <span class="products__item-text">Хинкали</span>
+        <div class="information__item">
+          <img
+            src="img/information-img3.svg"
+            alt=""
+            class="information__item-img"
+          />
+          <h4 class="information__item-title">Самовывоз</h4>
+          <p class="information__item-text">
+            Мы принимаем предварительные заказы и оформляем самовывоз к нужному
+            для Вас времени
+          </p>
         </div>
-      </a>
-      <a href="#" class="products__item products__item3">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg3.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon4.svg" alt="" />
-          <span class="products__item-text">Закуски</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item4">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg4.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon2.svg" alt="" />
-          <span class="products__item-text">Мясо в тандыре</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item5">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg5.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon5.svg" alt="" />
-          <span class="products__item-text">Овощи на мангале</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item6">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg6.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon6.svg" alt="" />
-          <span class="products__item-text">Пицца из печи</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item7">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg7.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon7.svg" alt="" />
-          <span class="products__item-text">Свежая выпечка</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item8">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg8.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon8.svg" alt="" />
-          <span class="products__item-text">Шаурма</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item9">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg9.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon9.svg" alt="" />
-          <span class="products__item-text">Десерты</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item10">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg10.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon10.svg" alt="" />
-          <span class="products__item-text">Напитки</span>
-        </div>
-      </a>
-      <a href="#" class="products__item products__item11">
-        <span
-          class="products__item-bg"
-          style="background-image: url(img/product-bg11.jpg)"
-        ></span>
-        <div class="products__item-info">
-          <img class="products__item-img" src="img/product-icon11.svg" alt="" />
-          <span class="products__item-text">Мясо маринованное</span>
-        </div>
-      </a>
-    </div>
-
-    <div class="traditional-dishes">
-      <div class="traditional-dishes__img-wrap">
-        <img
-          src="img/traditional-dishes-img.png"
-          class="traditional-dishes__img-wrap-img"
-          alt=""
-        />
-      </div>
-      <div class="traditional-dishes__info">
-        <h2 class="traditional-dishes__info-title">
-          Традиционные блюда кавказской кухни
-        </h2>
-        <p class="traditional-dishes__info-subtitle">
-          Современные грузинские блюда, фирменные закуски по секретным рецептам
-          шеф-повара из Тбилиси – Ягора Мирабяна.
-        </p>
-        <p class="traditional-dishes__info-text">
-          Готовим исключительно из свежего мяса на мангале и в тандыре,
-          тщательно подбираем овощи и продукты, регулярно обновляем меню, чтобы
-          предложить нашим гостям богатое разнообразие блюд. Только у нас можно
-          попробовать грузинскую пиццу из собственной печи, ароматную выпечку и
-          традиционные блюда Грузии – хачапури, пхали и хинкали. Если вы любите
-          вкусно и сытно поесть, приходите к нам в гости или закажите доставку.
-        </p>
       </div>
     </div>
 

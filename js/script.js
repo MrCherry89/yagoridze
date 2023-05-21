@@ -91,4 +91,40 @@ $(document).ready(function () {
   $(".header__basket").on("click", function () {
     $(".header__basket-info").toggleClass("open");
   });
+
+  $(".select-wrap select").select2({
+    minimumResultsForSearch: -1,
+  });
+
+  $(".phone-number-input").inputmask({
+    mask: "+7 (999)-999-999-9",
+  });
+  $(".ordering__form").validate({
+    rules: {
+      phone: {
+        required: true,
+      },
+    },
+  });
+
+  $(".ordering__form-receiving-tab-menu li a").on("click", function (e) {
+    e.preventDefault();
+    $(this)
+      .closest(".ordering__form-receiving-tab-menu")
+      .find("li")
+      .removeClass("active");
+    $(this).closest("li").addClass("active");
+    var index = $(this).closest("li").index();
+    $(".tab-content-item").removeClass("active");
+    $(".tab-content-item").eq(index).addClass("active");
+  });
+
+  $(".tab-menu li a").on("click", function (e) {
+    e.preventDefault();
+    $(this).closest(".tab-menu").find("li").removeClass("active");
+    $(this).closest("li").addClass("active");
+    var index = $(this).closest("li").index();
+    $(".tab-content2 .tab-content-item").removeClass("active");
+    $(".tab-content2 .tab-content-item").eq(index).addClass("active");
+  });
 });

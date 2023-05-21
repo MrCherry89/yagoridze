@@ -182,10 +182,7 @@
   z-index: 0;
   @media (min-width: 960px) {
     @include flex;
-    padding-top: 30px;
-  }
-  @media (min-width: 1280px) {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   @media (min-width: 1500px) {
     padding-top: 50px;
@@ -1296,196 +1293,258 @@
         margin: 0;
       }
     }
-    &-item {
-      @include flex;
-      @include dir-col;
-      margin: 40px 15px 60px;
-      transition: 0.3s;
-      // outline: 1px solid red;
-      @media (max-width: 1500px) {
-        margin: 30px 15px 40px;
-      }
-      @media (max-width: 1280px) {
-        margin: 20px 10px 30px;
-      }
-      @media (max-width: 961px) {
-        width: 200px;
-      }
-      @media (max-width: 768px) {
-        width: 210px;
-      }
-      @media (max-width: 576px) {
-        width: 164px;
-        margin: 20px 7px;
-      }
-      &.active {
-        .order__slider-img {
-          border: 2px solid $green;
-        }
-      }
-    }
-    &-img {
-      width: 100%;
-      height: 14vw;
-      border-radius: 20px;
-      position: relative;
-      margin-bottom: 20px;
-      overflow: hidden;
-      @media (max-width: 1280px) {
-        margin-bottom: 15px;
-      }
-      @media (max-width: 961px) {
-        height: 140px;
-      }
-      @media (max-width: 768px) {
-        height: 150px;
-      }
-      @media (max-width: 576px) {
-        height: 114px;
-      }
-      img {
-        transition: 0.3s;
-      }
-      &:hover {
-        img {
-          transform: scale(1.1);
-        }
-      }
-    }
-    &-new {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 25px;
-      color: white;
-      font-family: $a;
-      width: 50px;
-      height: 50px;
-      z-index: 0;
-      @include flex;
-      @include align-center;
-      @include justify-center;
-      @media (max-width: 1500px) {
-        font-size: 17px;
-        width: 35px;
-        height: 35px;
-      }
-      @media (max-width: 1280px) {
-        font-size: 14px;
-        width: 26px;
-        height: 26px;
-        top: 15px;
-        right: 15px;
-      }
-      @media (max-width: 961px) {
-        margin-bottom: 5px;
-      }
-      @media (max-width: 576px) {
-        width: 22px;
-        height: 22px;
-        font-size: 13px;
-        top: 10px;
-        right: 10px;
-      }
+  }
+}
 
-      &:after {
-        content: "";
-        position: absolute;
-        top: 1px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $orange;
-        border-radius: 5px;
-        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-        z-index: -1;
+.order__item {
+  @include flex;
+  @include dir-col;
+  margin: 40px 15px 60px;
+  transition: 0.3s;
+  @media (max-width: 1500px) {
+    margin: 30px 15px 40px;
+  }
+  @media (max-width: 1280px) {
+    margin: 20px 10px 30px;
+  }
+  @media (max-width: 961px) {
+    width: 200px;
+  }
+  @media (max-width: 768px) {
+    width: 210px;
+  }
+  @media (max-width: 576px) {
+    width: 164px;
+    margin: 20px 7px;
+  }
+  &.active {
+    .order__slider-img {
+      border: 2px solid $green;
+    }
+  }
+  &-img {
+    width: 100%;
+    height: 14vw;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    @media (max-width: 1280px) {
+      margin-bottom: 15px;
+    }
+    @media (max-width: 961px) {
+      height: 140px;
+    }
+    @media (max-width: 768px) {
+      height: 150px;
+    }
+    @media (max-width: 576px) {
+      height: 114px;
+    }
+    img {
+      transition: 0.3s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
       }
     }
-    &-bg {
-      @include flex;
-      border-radius: 20px;
+  }
+  &-bg {
+    @include flex;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
       width: 100%;
       height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+      object-fit: cover;
     }
-    &-name {
-      font-size: 25px;
-      line-height: 35px;
-      font-weight: bold;
-      color: white;
-      display: block;
-      margin-bottom: 10px;
-      @media (max-width: 1500px) {
-        font-size: 20px;
-        line-height: 110%;
-      }
-      @media (max-width: 1280px) {
-        font-size: 17px;
-      }
-      @media (max-width: 576px) {
-        font-size: 15px;
-        margin-bottom: 5px;
-      }
+  }
+  &-new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: white;
+    font-family: $a;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
+    @include flex;
+    @include align-center;
+    @include justify-center;
+    @media (max-width: 1500px) {
+      font-size: 17px;
+      width: 35px;
+      height: 35px;
     }
-    &-price-text {
+    @media (max-width: 1280px) {
       font-size: 14px;
-      display: block;
-      margin-bottom: 20px;
-      color: #af9a8c;
-      @media (max-width: 1280px) {
-        margin-bottom: 10px;
-      }
+      width: 26px;
+      height: 26px;
+      top: 15px;
+      right: 15px;
     }
-    &-text {
-      display: block;
+    @media (max-width: 961px) {
+      margin-bottom: 5px;
+    }
+    @media (max-width: 576px) {
+      width: 22px;
+      height: 22px;
+      font-size: 13px;
+      top: 10px;
+      right: 10px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $orange;
+      border-radius: 5px;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      z-index: -1;
+    }
+  }
+
+  &-name {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    @media (max-width: 1500px) {
+      font-size: 20px;
+      line-height: 110%;
+    }
+    @media (max-width: 1280px) {
+      font-size: 17px;
+    }
+    @media (max-width: 576px) {
       font-size: 15px;
-      line-height: 20px;
-      color: white;
-      @media (max-width: 1280px) {
-        font-size: 13px;
-        line-height: 15px;
-      }
-      @media (max-width: 576px) {
-        font-size: 12px;
-      }
+      margin-bottom: 5px;
     }
-    &-price {
-      @include flex;
-      @include justify-between;
-      @include align-center;
-      margin-top: 35px;
-      @media (max-width: 1500px) {
-        margin-top: 25px;
-      }
-      @media (max-width: 576px) {
-        margin-top: 20px;
-      }
+  }
+  &-price-text {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+    color: #af9a8c;
+    @media (max-width: 1280px) {
+      margin-bottom: 10px;
     }
-    &-prices {
-      @include flex;
-      @include dir-col;
+  }
+  &-text {
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    @media (max-width: 1280px) {
+      font-size: 13px;
+      line-height: 15px;
     }
-    &-new-price {
-      font-size: 25px;
-      color: white;
-      @media (max-width: 1500px) {
-        font-size: 20px;
-      }
-      @media (max-width: 576px) {
-        font-size: 17px;
-      }
+    @media (max-width: 576px) {
+      font-size: 12px;
     }
-    &-old-price {
-      font-size: 15px;
-      text-decoration-line: line-through;
-      color: $red;
-      margin-top: 1px;
-      @media (max-width: 576px) {
-        font-size: 13px;
+  }
+  &-price {
+    @include flex;
+    @include justify-between;
+    @include align-center;
+    margin-top: 35px;
+    @media (max-width: 1500px) {
+      margin-top: 25px;
+    }
+    @media (max-width: 576px) {
+      margin-top: 20px;
+    }
+  }
+  &-prices {
+    @include flex;
+    @include dir-col;
+  }
+  &-new-price {
+    font-size: 25px;
+    color: white;
+    @media (max-width: 1500px) {
+      font-size: 20px;
+    }
+    @media (max-width: 576px) {
+      font-size: 17px;
+    }
+  }
+  &-old-price {
+    font-size: 15px;
+    text-decoration-line: line-through;
+    color: $red;
+    margin-top: 1px;
+    @media (max-width: 576px) {
+      font-size: 13px;
+    }
+  }
+}
+
+.orders {
+  background: #d9d9d9;
+  padding: 50px 15px;
+  @media (min-width: 768px) {
+    padding: 50px 24px;
+  }
+  @media (min-width: 1280px) {
+    padding: 50px 40px;
+  }
+  @media (min-width: 1500px) {
+    padding: 100px;
+    padding-top: 50px;
+  }
+  &__items {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 960px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width: 1500px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+    }
+    .order__item {
+      margin: 0;
+      width: 100%;
+      padding: 20px;
+      padding-bottom: 30px;
+      background: white;
+      border-radius: 30px;
+      border: 1px solid #d9d9d9;
+      box-shadow: 2px 2px 0px #ffffff, 3px 3px 0px #d9d9d9, 5px 5px 0px #ffffff,
+        6px 6px 0px #d9d9d9;
+      &-img {
+        height: auto;
+      }
+      &-name {
+        color: #000;
+      }
+      &-price-text {
+        color: #af9a8c;
+      }
+      &-text {
+        color: #000;
+      }
+      &-new-price {
+        color: #000;
+      }
+      .red-btn {
+        box-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #d20000;
       }
     }
   }
@@ -1521,6 +1580,9 @@
 
 .header {
   overflow: hidden;
+  &_black-bg {
+    background: $black;
+  }
   &__logo {
     width: 100px;
     @media (min-width: 1280px) {
@@ -1750,11 +1812,19 @@
     @media (min-width: 768px) {
       padding: 10px 24px;
     }
+    @media (min-width: 960px) {
+      margin-bottom: 120px;
+    }
     @media (min-width: 1280px) {
       padding: 10px 40px;
+      margin-bottom: 150px;
     }
     @media (min-width: 1500px) {
       padding: 10px 100px;
+      margin-bottom: 170px;
+      &:after {
+        height: 80px;
+      }
     }
   }
   &__mobile-menu {
@@ -1910,8 +1980,29 @@
     overflow: hidden;
     @media (min-width: 960px) {
       overflow: visible;
-      background: $black;
+      background: none;
       padding: 10px 0;
+      width: calc(100% - 48px);
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -24px;
+        height: 60px;
+        background: $black;
+        z-index: -1;
+        width: calc(100% + 48px);
+      }
+    }
+    @media (min-width: 1280px) {
+      top: 100px;
+    }
+    @media (min-width: 1500px) {
+      top: 120px;
     }
     &-wrap {
       overflow-x: auto;
@@ -1922,23 +2013,23 @@
         border-radius: 10px;
         overflow: hidden;
       }
+      .style {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+        transform: translateY(-50%);
+        display: none;
+        @media (min-width: 960px) {
+          display: block;
+        }
+      }
       @media (min-width: 960px) {
         padding: 20px;
         position: relative;
         z-index: 0;
-        &:after {
-          content: "";
-          background: url(../img/header-style.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center center;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: -1;
-          height: 100%;
-        }
       }
     }
     &-items {
@@ -1947,7 +2038,7 @@
       @media (min-width: 768px) {
         @include justify-between;
       }
-      @media (min-width: 960px) {
+      @media (min-width: 1280px) {
         @include justify-around;
       }
     }
@@ -2283,5 +2374,960 @@
   .header__basket-resault {
     background: white;
     color: #000;
+  }
+}
+
+.catalog {
+  padding: 20px 15px;
+  @media (min-width: 768px) {
+    padding: 20px 24px;
+  }
+  @media (min-width: 1280px) {
+    padding: 20px 40px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: 1500px) {
+    padding: 20px 100px;
+    padding-bottom: 50px;
+  }
+  &__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 32px;
+    @media (min-width: 960px) {
+      font-size: 38px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 50px;
+    }
+  }
+  &__search {
+    padding: 15px 13px;
+    border-radius: 20px;
+    background: $orange;
+    margin-bottom: 20px;
+    &-form {
+      border-radius: 15px;
+      border: 1px solid white;
+      height: 60px;
+      position: relative;
+      @media (min-width: 1280px) {
+        height: 70px;
+      }
+    }
+    &-btn {
+      position: absolute;
+      right: 15px;
+      top: 48%;
+      transform: translateY(-50%);
+      box-shadow: 2px 2px 0px #f16e20, 4px 4px 0px #d20000;
+    }
+    &-input {
+      width: 100%;
+      height: 100%;
+      background: none;
+      font-size: 16px;
+      color: white;
+      padding-left: 24px;
+      padding-right: 85px;
+      @include placeholder {
+        color: white;
+        font-size: 16px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 20px;
+        @include placeholder {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &__info-links {
+    @include flex;
+    @include flex-wrap;
+    margin-bottom: 20px;
+  }
+  &__info-link {
+    @include flex;
+    @include align-center;
+    background: $green;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    @media (min-width: 1280px) {
+      padding: 8px 15px;
+    }
+    &:hover {
+      background: darken($green, 8%);
+    }
+    &-img {
+      margin-right: 8px;
+      @media (min-width: 1280px) {
+        margin-right: 10px;
+      }
+    }
+    &-text {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  &__items-wrap {
+    overflow: hidden;
+  }
+  &__items {
+    width: 100%;
+    overflow-x: auto;
+    @include flex;
+    @media (min-width: 1280px) {
+      display: grid;
+      overflow-x: inherit;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    @media (min-width: 1500px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  &__item {
+    border-radius: 10px;
+    padding: 12px 15px;
+    @include flex;
+    @include dir-col;
+    @include align-center;
+    border: 1px solid #d9d9d9;
+    margin-right: 10px;
+    min-width: 120px;
+    @media (min-width: 1280px) {
+      height: 200px;
+      @include justify-center;
+      border-radius: 40px;
+    }
+    &:hover {
+      border-color: $orange;
+      span {
+        color: $orange;
+      }
+    }
+    &-img {
+      width: 30px;
+      margin-bottom: 10px;
+      @media (min-width: 1280px) {
+        width: auto;
+      }
+    }
+    &-text {
+      font-weight: bold;
+      font-size: 12px;
+      color: $black;
+      text-align: center;
+      transition: 0.3s;
+      line-height: 14px;
+      @media (min-width: 1280px) {
+        font-size: 14px;
+        max-width: 120px;
+      }
+    }
+  }
+}
+
+.categories {
+  padding: 20px 15px;
+  @media (min-width: 768px) {
+    padding: 20px 24px;
+  }
+  @media (min-width: 1280px) {
+    padding: 20px 40px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: 1500px) {
+    padding: 20px 100px;
+    padding-bottom: 50px;
+  }
+  &__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 32px;
+    @media (min-width: 960px) {
+      font-size: 38px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 50px;
+    }
+  }
+  &__links {
+    @include flex;
+    @include flex-wrap;
+  }
+  &__link {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    @include flex;
+    @include align-center;
+    @media (min-width: 768px) {
+      padding: 20px;
+      border-radius: 20px;
+    }
+    &:hover {
+      border-color: $orange;
+      span {
+        color: $orange;
+      }
+    }
+    &-img {
+      margin-right: 5px;
+      width: 30px;
+      @media (min-width: 768px) {
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+    &-text {
+      font-weight: bold;
+      font-size: 12px;
+      color: black;
+      transition: 0.3s;
+      @media (min-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.ordering {
+  padding: 20px 15px;
+  @media (min-width: 768px) {
+    padding: 20px 24px;
+  }
+  @media (min-width: 1280px) {
+    padding: 20px 40px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: 1500px) {
+    padding: 20px 100px;
+    padding-bottom: 50px;
+  }
+  &__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 25px;
+    @media (min-width: 576px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+      font-size: 35px;
+    }
+    @media (min-width: 960px) {
+      font-size: 40px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 45px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+  }
+  &__info {
+    @include flex;
+    flex-direction: column-reverse;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  &__total {
+    background: #161616;
+    border: 1px solid #af9a8c;
+    box-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #af9a8c, 6px 6px 0px #ffffff,
+      8px 8px 0px #af9a8c;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+    @media (min-width: 768px) {
+      width: 30%;
+      align-self: flex-start;
+    }
+    @media (min-width: 960px) {
+      padding: 20px;
+    }
+    @media (min-width: 1280px) {
+      padding: 40px;
+      border-radius: 50px;
+      width: 40%;
+    }
+    @media (min-width: 1500px) {
+      padding: 60px;
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+      @media (min-width: 576px) {
+        font-size: 30px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+    }
+    &-info {
+      @include flex;
+      @include align-center;
+      border-bottom: 1px solid #af9a8c;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      @media (min-width: 768px) {
+        padding-bottom: 10px;
+      }
+      @media (min-width: 1280px) {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    &-name {
+      font-size: 14px;
+      color: white;
+      @media (min-width: 768px) {
+        margin-right: 5px;
+      }
+      @media (min-width: 960px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 17px;
+      }
+    }
+    &-things {
+      margin-left: auto;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      @media (min-width: 768px) {
+        white-space: nowrap;
+      }
+      @media (min-width: 960px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 20px;
+      }
+    }
+    &-price {
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      margin-left: 20px;
+      @media (min-width: 768px) {
+        white-space: nowrap;
+        margin-left: 10px;
+      }
+      @media (min-width: 960px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 20px;
+        margin-left: 50px;
+      }
+    }
+    &-gift {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: $green;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      @include flex;
+      @media (min-width: 1280px) {
+        padding: 13px 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-size: 14px;
+        color: white;
+        @media (min-width: 768px) {
+          margin-bottom: 5px;
+        }
+        @media (min-width: 960px) {
+          margin-bottom: 0;
+        }
+        @media (min-width: 1280px) {
+          font-size: 17px;
+        }
+      }
+      &-icon {
+        @include flex;
+        @include align-center;
+        margin-bottom: 5px;
+        margin-right: 20px;
+        img {
+          width: 20px;
+          margin-right: 10px;
+        }
+        b {
+          font-weight: bold;
+          font-size: 17px;
+          color: white;
+          margin-top: 3px;
+        }
+      }
+    }
+    &-list {
+      border-bottom: 1px solid #af9a8c;
+      margin-bottom: 15px;
+      &-item {
+        margin-bottom: 10px;
+        @include flex;
+        @include justify-between;
+        @media (min-width: 768px) {
+          @include dir-col;
+        }
+        @media (min-width: 1280px) {
+          flex-direction: row;
+        }
+        &-text {
+          font-size: 14px;
+          font-weight: bold;
+          color: white;
+          @media (min-width: 768px) {
+            margin-bottom: 5px;
+          }
+          @media (min-width: 1280px) {
+            font-size: 17px;
+          }
+        }
+        &-price {
+          font-size: 17px;
+          font-weight: bold;
+          color: white;
+        }
+      }
+    }
+    &-itog {
+      &-text {
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        @media (min-width: 1280px) {
+          font-size: 40px;
+        }
+      }
+      &-price {
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        @media (min-width: 1280px) {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  &__form {
+    @media (min-width: 768px) {
+      width: 70%;
+      margin-right: 30px;
+    }
+    @media (min-width: 1280px) {
+      width: 60%;
+      margin-right: 50px;
+    }
+    .tab-content-item {
+      @include flex;
+      @include dir-col;
+
+      label.error {
+        display: none !important;
+      }
+      input {
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        padding: 0 15px;
+        height: 42px;
+        font-weight: bold;
+        font-size: 12px;
+        color: #979797;
+        width: 100%;
+        @media (min-width: 960px) {
+          height: 54px;
+          font-size: 14px;
+          border-radius: 20px;
+        }
+        &.error {
+          border-color: $orange;
+        }
+      }
+      .red-btn {
+        font-size: 20px;
+        height: 60px;
+        max-width: 240px;
+      }
+    }
+    &-receiving {
+      @media (min-width: 1280px) {
+        @include flex;
+        margin-bottom: 40px;
+      }
+      &-text {
+        font-size: 17px;
+        margin-bottom: 15px;
+        @media (min-width: 1280px) {
+          width: 150px;
+        }
+        @media (min-width: 1500px) {
+          width: 220px;
+          font-size: 20px;
+        }
+      }
+      &-tab-menu {
+        border: 1px solid #d9d9d9;
+        border-radius: 15px;
+        padding: 5px;
+        @include inline-flex;
+        margin-bottom: 30px;
+        @media (min-width: 960px) {
+          border-radius: 20px;
+        }
+        @media (min-width: 1280px) {
+          margin-bottom: 0;
+        }
+        li {
+          a {
+            font-weight: bold;
+            color: $black;
+            font-size: 12px;
+            padding: 15px;
+            border-radius: 10px;
+            @media (min-width: 960px) {
+              font-size: 14px;
+              height: 54px;
+              padding: 0 15px;
+              @include flex;
+              @include align-center;
+              @include justify-center;
+              border-radius: 20px;
+            }
+          }
+          &.active {
+            a {
+              background: $orange;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    &-contacts {
+      margin-bottom: 30px;
+      @media (min-width: 1280px) {
+        @include flex;
+        margin-bottom: 40px;
+      }
+      &-text {
+        font-size: 17px;
+        margin-bottom: 15px;
+        @media (min-width: 1280px) {
+          width: 150px;
+        }
+        @media (min-width: 1500px) {
+          width: 220px;
+          font-size: 20px;
+        }
+      }
+      &-inputs {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        @media (min-width: 1280px) {
+          flex-grow: 1;
+          gap: 20px;
+        }
+      }
+    }
+    &-address {
+      margin-bottom: 30px;
+      @media (min-width: 1280px) {
+        @include flex;
+        margin-bottom: 40px;
+        @include flex-wrap;
+      }
+      &-text {
+        font-size: 17px;
+        margin-bottom: 15px;
+        @media (min-width: 1280px) {
+          width: 150px;
+          padding-right: 20px;
+        }
+        @media (min-width: 1500px) {
+          width: 220px;
+          font-size: 20px;
+        }
+      }
+      &-inputs {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (min-width: 1280px) {
+          width: calc(100% - 150px);
+          gap: 20px;
+        }
+        @media (min-width: 1500px) {
+          width: calc(100% - 220px);
+        }
+        .select-wrap {
+          grid-column: 1/4;
+          grid-row: 1/2;
+          @media (min-width: 576px) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
+          @media (min-width: 1280px) {
+            grid-column: 1/3;
+            grid-row: 1/2;
+          }
+        }
+        .input1 {
+          grid-column: 1/4;
+          grid-row: 2/3;
+          @media (min-width: 576px) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+          }
+          @media (min-width: 1280px) {
+            grid-column: 3/4;
+            grid-row: 1/2;
+          }
+        }
+        .input2 {
+          grid-column: 1/2;
+          grid-row: 3/4;
+          @media (min-width: 576px) {
+            grid-column: 3/4;
+            grid-row: 1/2;
+          }
+          @media (min-width: 1280px) {
+            grid-column: 1/2;
+            grid-row: 2/2;
+          }
+        }
+        .input3 {
+          grid-column: 2/4;
+          grid-row: 3/4;
+          @media (min-width: 576px) {
+            grid-column: 1/2;
+            grid-row: 2/2;
+          }
+          @media (min-width: 1280px) {
+            grid-column: 2/4;
+            grid-row: 2/2;
+          }
+        }
+        .input4 {
+          grid-column: 1/2;
+          grid-row: 4/4;
+          @media (min-width: 576px) {
+            grid-column: 2/3;
+            grid-row: 2/2;
+          }
+          @media (min-width: 1280px) {
+            grid-column: 1/2;
+            grid-row: 3/3;
+          }
+        }
+        .input5 {
+          grid-column: 2/3;
+          grid-row: 4/4;
+          @media (min-width: 576px) {
+            grid-column: 3/4;
+            grid-row: 2/2;
+          }
+          @media (min-width: 1280px) {
+            grid-column: 2/3;
+            grid-row: 3/3;
+          }
+        }
+        .input6 {
+          grid-column: 3/4;
+          grid-row: 4/4;
+          @media (min-width: 576px) {
+            grid-column: 1/2;
+            grid-row: 3/3;
+          }
+          @media (min-width: 1280px) {
+            grid-column: 3/4;
+            grid-row: 3/3;
+          }
+        }
+      }
+      &-free {
+        @include flex;
+        @include align-center;
+        @media (min-width: 1280px) {
+          width: calc(100% - 150px);
+          margin-left: auto;
+          margin-top: 20px;
+        }
+        @media (min-width: 1500px) {
+          width: calc(100% - 220px);
+        }
+        img {
+          margin-right: 10px;
+        }
+        p {
+          color: $red;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 20px;
+        }
+      }
+    }
+    &-time {
+      margin-bottom: 30px;
+      @media (min-width: 1280px) {
+        @include flex;
+        margin-bottom: 40px;
+      }
+      &-text {
+        font-size: 17px;
+        margin-bottom: 15px;
+        @media (min-width: 1280px) {
+          width: 150px;
+          padding-right: 10px;
+        }
+        @media (min-width: 1500px) {
+          width: 220px;
+          font-size: 20px;
+        }
+      }
+    }
+    &-comment {
+      margin-bottom: 30px;
+      @media (min-width: 1280px) {
+        @include flex;
+        margin-bottom: 40px;
+      }
+      &-text {
+        font-size: 17px;
+        margin-bottom: 15px;
+        @media (min-width: 1280px) {
+          width: 150px;
+          min-width: 150px;
+        }
+        @media (min-width: 1500px) {
+          width: 220px;
+          min-width: 220px;
+          font-size: 20px;
+        }
+      }
+      &-textarea {
+        padding: 20px 15px;
+        resize: none;
+        width: 100%;
+        border: 1px solid #d9d9d9;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 12px;
+        color: #979797;
+        height: 150px;
+        @media (min-width: 960px) {
+          border-radius: 20px;
+          font-size: 14px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    &-payment {
+      margin-bottom: 20px;
+      @media (min-width: 1280px) {
+        @include flex;
+        margin-bottom: 30px;
+      }
+      &-text {
+        font-size: 17px;
+        margin-bottom: 15px;
+        @media (min-width: 1280px) {
+          width: 150px;
+        }
+        @media (min-width: 1500px) {
+          width: 220px;
+          font-size: 20px;
+        }
+      }
+      &-radio-wrap {
+        margin-bottom: 10px;
+      }
+    }
+    &-checkbox-wrap {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.tab-content2 {
+  @media (min-width: 576px) {
+    flex-grow: 1;
+  }
+  .tab-content-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.time-wrap {
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 5px;
+  @media (min-width: 576px) {
+    @include flex;
+    @include align-center;
+  }
+  @media (min-width: 960px) {
+    border-radius: 20px;
+  }
+  @media (min-width: 1280px) {
+    width: calc(100% - 150px);
+  }
+  @media (min-width: 1500px) {
+    width: calc(100% - 220px);
+  }
+  .tab-menu {
+    @include flex;
+    @include dir-col;
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+    li {
+      width: 100%;
+      margin-bottom: 10px;
+      @media (min-width: 576px) {
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+      a {
+        font-weight: bold;
+        color: $black;
+        font-size: 12px;
+        padding: 15px;
+        @include flex;
+        width: 100%;
+        @include align-center;
+        @include justify-center;
+        border-radius: 10px;
+        @media (min-width: 576px) {
+          padding: 0 15px;
+          line-height: 12px;
+          height: 42px;
+          text-align: center;
+        }
+        @media (min-width: 768px) {
+          width: 110px;
+        }
+        @media (min-width: 960px) {
+          font-size: 14px;
+          height: 54px;
+          line-height: 16px;
+          width: 150px;
+          border-radius: 20px;
+        }
+        @media (min-width: 1280px) {
+          width: 130px;
+        }
+      }
+      &.active {
+        a {
+          background: $orange;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.information {
+  padding: 50px 15px;
+  @media (min-width: 768px) {
+    padding: 50px 24px;
+  }
+  @media (min-width: 960px) {
+    padding: 60px 24px;
+  }
+  @media (min-width: 1280px) {
+    padding: 80px 40px;
+  }
+  @media (min-width: 1500px) {
+    padding: 100px;
+  }
+  &__items {
+    display: grid;
+    gap: 30px 20px;
+    grid-template-columns: 1fr 1fr;
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
+  }
+  &__item {
+    &-img {
+      width: 100px;
+      margin-bottom: 10px;
+      @media (min-width: 576px) {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 768px) {
+        width: auto;
+      }
+    }
+    &-title {
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 10px;
+      @media (min-width: 576px) {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+      @media (min-width: 768px) {
+        font-size: 25px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 40px;
+      }
+      @media (min-width: 1500px) {
+        font-size: 50px;
+      }
+    }
+    &-text {
+      font-size: 13px;
+      line-height: 15px;
+      @media (min-width: 576px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      @media (min-width: 768px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 17px;
+        line-height: 120%;
+      }
+      @media (min-width: 1500px) {
+        font-size: 20px;
+      }
+    }
   }
 }
