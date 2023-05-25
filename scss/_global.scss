@@ -62,7 +62,49 @@ button {
   }
 }
 
-.breadcromb-menu {
+.main__title-wrap {
+  padding: 20px 15px 10px;
+  @media (min-width: 576px) {
+    padding-bottom: 20px;
+  }
+  @media (min-width: 768px) {
+    padding: 20px 24px;
+  }
+  @media (min-width: 1280px) {
+    padding: 20px 40px;
+  }
+  @media (min-width: 1500px) {
+    padding: 20px 100px 40px;
+  }
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  @media (min-width: 576px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  @media (min-width: 768px) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  @media (min-width: 960px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.breadcramb-menu {
   @include flex;
   margin-bottom: 10px;
   li {

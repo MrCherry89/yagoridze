@@ -30,54 +30,6 @@ $(document).ready(function () {
     ],
   });
 
-  $(".basket-info-item-product-count .btn-minus").addClass("btn-disabled");
-
-  $(".basket-info-item-product-count .input-number").on("change", function () {
-    if ($(this).val() == 1) {
-      $(this)
-        .closest(".basket-info-item-product-count")
-        .find(".btn-minus")
-        .addClass("btn-disabled");
-    } else {
-      $(this)
-        .closest(".basket-info-item-product-count")
-        .find(".btn-minus")
-        .removeClass("btn-disabled");
-    }
-  });
-
-  $(".btn-minus").on("click", function (e) {
-    e.preventDefault();
-    var number =
-      parseInt(
-        $(this)
-          .closest(".basket-info-item-product-count")
-          .find(".input-number")
-          .val()
-      ) - 1;
-    $(this)
-      .closest(".basket-info-item-product-count")
-      .find(".input-number")
-      .val(number > 0 ? number : 1)
-      .change();
-  });
-
-  $(".btn-plus").on("click", function (e) {
-    e.preventDefault();
-    var number =
-      parseInt(
-        $(this)
-          .closest(".basket-info-item-product-count")
-          .find(".input-number")
-          .val()
-      ) + 1;
-    $(this)
-      .closest(".basket-info-item-product-count")
-      .find(".input-number")
-      .val(number)
-      .change();
-  });
-
   $(".header__drop-menu").on("click", function () {
     $(".header__menu-wrap").toggleClass("open");
     $("body, html").toggleClass("overflow");
@@ -88,16 +40,28 @@ $(document).ready(function () {
     $("body, html").removeClass("overflow");
   });
 
-  $(".header__basket").on("click", function () {
-    $(".header__basket-info").toggleClass("open");
+  $(window).on("resize", function (e) {
+    checkScreenSize();
   });
+
+  checkScreenSize();
+
+  function checkScreenSize() {
+    var newWindowWidth = $(window).width();
+    if (newWindowWidth < 1281) {
+      $(".header__basket").on("click", function () {
+        $(".header__basket-info").toggleClass("open");
+      });
+    } else {
+    }
+  }
 
   $(".select-wrap select").select2({
     minimumResultsForSearch: -1,
   });
 
   $(".phone-number-input").inputmask({
-    mask: "+7 (999)-999-999-9",
+    mask: "+7 (999)-999-99-99",
   });
   $(".ordering__form").validate({
     rules: {
