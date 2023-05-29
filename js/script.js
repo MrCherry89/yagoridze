@@ -46,14 +46,23 @@ $(document).ready(function () {
 
   checkScreenSize();
 
+  // function checkScreenSize() {
+  //   var newWindowWidth = $(window).width();
+  //   if (newWindowWidth < 1281) {
+  //     $(".header__basket").on("click", function () {
+  //       $(".header__basket-info").toggleClass("open");
+  //     });
+  //   } else {
+  //   }
+  // }
+
   function checkScreenSize() {
     var newWindowWidth = $(window).width();
-    if (newWindowWidth < 1281) {
-      $(".header__basket").on("click", function () {
+    $(document).on("click", ".header__basket", function () {
+      if (newWindowWidth < 1281) {
         $(".header__basket-info").toggleClass("open");
-      });
-    } else {
-    }
+      }
+    });
   }
 
   $(".select-wrap select").select2({
