@@ -2003,11 +2003,11 @@
         content: "";
         position: absolute;
         top: 0;
-        left: -24px;
+        left: -25px;
         height: 60px;
         background: $black;
         z-index: -1;
-        width: calc(100% + 48px);
+        width: calc(100% + 50px);
       }
     }
     @media (min-width: 1280px) {
@@ -3293,6 +3293,326 @@
       @media (min-width: 1500px) {
         font-size: 20px;
       }
+    }
+  }
+}
+
+.card {
+  padding: 0 15px;
+  margin-bottom: 50px;
+  @media (min-width: 768px) {
+    padding: 0 24px;
+    @include flex;
+  }
+  @media (min-width: 1280px) {
+    padding: 0 40px;
+  }
+  @media (min-width: 1500px) {
+    padding: 0 100px;
+  }
+  &__wrap {
+    border: 1px solid #d9d9d9;
+    box-shadow: 2px 2px 0px #ffffff, 3px 3px 0px #d9d9d9, 5px 5px 0px #ffffff,
+      6px 6px 0px #d9d9d9;
+    border-radius: 20px;
+    width: 100%;
+    @media (min-width: 768px) {
+      @include flex;
+    }
+    @media (min-width: 1500px) {
+      border-radius: 40px;
+    }
+  }
+  &__img-wrap {
+    position: relative;
+    margin-bottom: 20px;
+    @media (min-width: 576px) {
+      @include flex;
+    }
+    @media (min-width: 768px) {
+      width: 50%;
+      align-self: flex-start;
+    }
+    @media (min-width: 960px) {
+      width: 35%;
+      align-self: auto;
+      margin-bottom: 0;
+    }
+    @media (min-width: 1500px) {
+      width: 40%;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: white;
+    font-family: $a;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
+    @include flex;
+    @include align-center;
+    @include justify-center;
+    @media (max-width: 1500px) {
+      font-size: 17px;
+      width: 35px;
+      height: 35px;
+    }
+    @media (max-width: 1280px) {
+      font-size: 14px;
+      width: 26px;
+      height: 26px;
+      top: 15px;
+      right: 15px;
+    }
+    @media (max-width: 961px) {
+      margin-bottom: 5px;
+    }
+    @media (max-width: 576px) {
+      width: 22px;
+      height: 22px;
+      font-size: 13px;
+      top: 10px;
+      right: 10px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $orange;
+      border-radius: 5px;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      z-index: -1;
+    }
+  }
+  &__info {
+    padding: 15px;
+    padding-top: 0;
+    @media (min-width: 576px) {
+      @include flex;
+    }
+    @media (min-width: 768px) {
+      width: 50%;
+      padding: 20px;
+      @include dir-col;
+    }
+    @media (min-width: 960px) {
+      flex-direction: row;
+      width: 65%;
+      padding-bottom: 100px;
+    }
+    @media (min-width: 1500px) {
+      padding: 50px 40px 180px;
+      width: 60%;
+    }
+  }
+  &__order {
+    @media (min-width: 576px) {
+      width: 60%;
+      padding-right: 20px;
+    }
+    @media (min-width: 768px) {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 960px) {
+      width: auto;
+    }
+    @media (min-width: 1280px) {
+      max-width: 510px;
+      width: 100%;
+    }
+    @media (min-width: 1500px) {
+      margin-right: 20px;
+    }
+    &-title {
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 20px;
+      @media (min-width: 960px) {
+        font-size: 24px;
+      }
+      @media (min-width: 1500px) {
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+    }
+    &-gram {
+      color: #af9a8c;
+      margin-bottom: 12px;
+      display: inline-block;
+      @media (min-width: 1500px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    &-subtitle {
+      font-size: 16px;
+      margin-bottom: 20px;
+      @media (min-width: 1500px) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+      }
+    }
+    &-bottom {
+      @include flex;
+      @include align-center;
+      @include justify-between;
+      max-width: 320px;
+      @media (min-width: 1500px) {
+        max-width: 100%;
+      }
+      .red-btn {
+        box-shadow: 1px 1px 0px #ffffff, 2px 2px 0px #d20000;
+        border-radius: 10px;
+        height: 46px;
+        font-size: 14px;
+        padding: 8px 12px;
+        @media (min-width: 1500px) {
+          height: 68px;
+          width: 190px;
+          font-size: 24px;
+          box-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #d20000;
+        }
+      }
+    }
+    &-prices {
+      @include flex;
+      @include dir-col;
+    }
+    &-new-price {
+      font-size: 18px;
+      margin-bottom: 2px;
+      display: inline-block;
+      @media (min-width: 1500px) {
+        font-size: 35px;
+        margin-bottom: 5px;
+      }
+    }
+    &-old-price {
+      font-size: 14px;
+      text-decoration-line: line-through;
+      color: #d20000;
+      @media (min-width: 1500px) {
+        font-size: 20px;
+      }
+    }
+    &-count {
+      background: #d9d9d9;
+      border-radius: 10px;
+      min-width: 100px;
+      overflow: hidden;
+      height: 50px;
+      @include flex;
+      @media (min-width: 1500px) {
+        height: 70px;
+      }
+      button {
+        width: 30px;
+        height: 100%;
+        @include flex;
+        @include align-center;
+        background: #d9d9d9;
+        &.btn-plus {
+          justify-content: flex-end;
+        }
+      }
+      input {
+        width: 35px;
+        text-align: center;
+        padding: 0 5px;
+        background: #d9d9d9;
+        font-size: 15px;
+        color: #000;
+      }
+    }
+    &-info {
+      background: #83892e;
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 20px;
+      position: relative;
+      @media (min-width: 576px) {
+        width: 40%;
+        margin-top: 0;
+      }
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+      @media (min-width: 960px) {
+        width: 270px;
+        min-width: 270px;
+        margin-left: 20px;
+        align-self: flex-start;
+      }
+      @media (min-width: 1500px) {
+        margin-left: auto;
+        padding: 30px;
+        width: 250px;
+        min-width: 250px;
+      }
+      &-img {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        @media (min-width: 1500px) {
+          top: 30px;
+        }
+      }
+      &-texts {
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &-bold {
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        display: block;
+        margin-bottom: 4px;
+        @media (min-width: 1500px) {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+      &-text {
+        font-size: 15px;
+        color: white;
+        @media (min-width: 1500px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.card-order-wrap {
+  @media (min-width: 768px) {
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .order {
+    @media (min-width: 768px) {
+      background: $black;
+      border: 1px solid #af9a8c;
+      box-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #af9a8c, 6px 6px 0px #ffffff,
+        8px 8px 0px #af9a8c;
+      border-radius: 50px;
     }
   }
 }

@@ -389,229 +389,163 @@
     <div class="main__title-wrap">
       <ul class="breadcrumb-menu">
         <li><a href="#">Главная</a></li>
-        <li><span>Меню</span></li>
+        <li><a href="#"> Меню </a></li>
+        <li><span>Мясо в тандыре</span></li>
       </ul>
-      <h1 class="main__title">Меню Ягоридзе</h1>
     </div>
 
-    <div class="catalog">
-      <div class="catalog__search">
-        <form class="catalog__search-form">
-          <input
-            type="text"
-            placeholder="Поиск по меню"
-            class="catalog__search-input"
-          />
-          <button type="button" class="catalog__search-btn red-btn">
-            Найти
-          </button>
-        </form>
-      </div>
-      <div class="catalog__info-links">
-        <a href="#" class="catalog__info-link">
-          <img src="img/pdf-icon.svg" alt="" class="catalog__info-link-img" />
-          <span class="catalog__info-link-text">Меню ресторана</span>
-        </a>
-        <a href="#" class="catalog__info-link">
-          <img src="img/pdf-icon.svg" alt="" class="catalog__info-link-img" />
-          <span class="catalog__info-link-text">Детское меню</span>
-        </a>
-        <a href="#" class="catalog__info-link">
-          <img src="img/pdf-icon.svg" alt="" class="catalog__info-link-img" />
-          <span class="catalog__info-link-text">Бизнес ланчи</span>
-        </a>
-      </div>
-      <div class="catalog__items-wrap">
-        <div class="catalog__items">
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon1.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Мясо на мангале</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon2.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Мясо в тандыре</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon3.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Хинкали</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon4.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Закуски</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon5.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Овощи на мангале</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon6.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Мясо маринованное</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon7.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Пицца из печи</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon8.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Свежая выпечка</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img src="img/product-icon9.svg" alt="" class="catalog__item-img" />
-            <span class="catalog__item-text">Шаурма</span>
-          </a>
-          <a href="#" class="catalog__item">
+    <div class="card">
+      <div class="card__wrap">
+        <div class="card__img-wrap">
+          <img class="card__img" src="img/order-slider-img.jpg" alt="" />
+          <span class="card__new">new</span>
+        </div>
+        <div class="card__info">
+          <div class="card__order">
+            <h4 class="card__order-title">Плов из баранины</h4>
+            <span class="card__order-gram">300 гр</span>
+            <p class="card__order-subtitle">
+              Колбаса пепперони, томат, оливки, сыр моцарелла, соус помодоро
+            </p>
+            <div class="card__order-bottom">
+              <div class="card__order-prices">
+                <span class="card__order-new-price">325 р</span>
+                <span class="card__order-old-price">460 р</span>
+              </div>
+              <div class="card__order-count">
+                <button type="button" class="btn-plus">
+                  <img src="img/plus-icon.svg" alt="" />
+                </button>
+                <input type="text" class="input-number" value="1" min="1" />
+                <button type="button" class="btn-minus">
+                  <img src="img/minus-icon.svg" alt="" />
+                </button>
+              </div>
+              <a href="#" class="red-btn">Заказать</a>
+            </div>
+          </div>
+          <div class="card__order-info">
             <img
-              src="img/product-icon10.svg"
+              src="img/card-style-img.png"
               alt=""
-              class="catalog__item-img"
+              class="card__order-info-img"
             />
-            <span class="catalog__item-text">Десерты</span>
-          </a>
-          <a href="#" class="catalog__item">
-            <img
-              src="img/product-icon11.svg"
-              alt=""
-              class="catalog__item-img"
-            />
-            <span class="catalog__item-text">Напитки</span>
-          </a>
+            <div class="card__order-info-texts">
+              <b class="card__order-info-bold">Калорийность: </b>
+              <span class="card__order-info-text">910 ккал</span>
+            </div>
+            <div class="card__order-info-texts">
+              <b class="card__order-info-bold">Белки: </b>
+              <span class="card__order-info-text">31 г</span>
+            </div>
+            <div class="card__order-info-texts">
+              <b class="card__order-info-bold">Жиры: </b>
+              <span class="card__order-info-text">72 г</span>
+            </div>
+            <div class="card__order-info-texts">
+              <b class="card__order-info-bold">Углеводы: </b>
+              <span class="card__order-info-text">12 г</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="orders">
-      <div class="orders__items">
-        <div class="order__item">
-          <a href="#" class="order__item-img">
-            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
-            <span class="order__item-new">new</span>
-          </a>
-          <span class="order__item-name">Плов из баранины</span>
-          <span class="order__item-price-text">300 гр</span>
-          <span class="order__item-text"
-            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-            помодоро</span
-          >
-          <div class="order__item-price">
-            <div class="order__item-prices">
-              <span class="order__item-new-price">325 р</span>
-              <span class="order__item-old-price">460 р</span>
+    <div class="order-wrap card-order-wrap">
+      <div class="order">
+        <h2 class="order__title">К этому блюду заказывают</h2>
+        <div class="order__slider">
+          <div class="order__item">
+            <a href="#" class="order__item-img">
+              <img
+                class="order__item-bg"
+                src="img/order-slider-img.jpg"
+                alt=""
+              />
+              <span class="order__item-new">new</span>
+            </a>
+            <span class="order__item-name">Плов из баранины</span>
+            <span class="order__item-price-text">300 гр</span>
+            <span class="order__item-text"
+              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+              помодоро</span
+            >
+            <div class="order__item-price">
+              <div class="order__item-prices">
+                <span class="order__item-new-price">325 р</span>
+                <span class="order__item-old-price">460 р</span>
+              </div>
+              <a href="#" class="red-btn">Заказать</a>
             </div>
-            <a href="#" class="red-btn">Заказать</a>
           </div>
-        </div>
-        <div class="order__item">
-          <a href="#" class="order__item-img">
-            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
-            <span class="order__item-new">new</span>
-          </a>
-          <span class="order__item-name">Плов из баранины</span>
-          <span class="order__item-price-text">300 гр</span>
-          <span class="order__item-text"
-            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-            помодоро</span
-          >
-          <div class="order__item-price">
-            <div class="order__item-prices">
-              <span class="order__item-new-price">325 р</span>
-              <span class="order__item-old-price">460 р</span>
+          <div class="order__item active">
+            <a href="#" class="order__item-img">
+              <img
+                class="order__item-bg"
+                src="img/order-slider-img.jpg"
+                alt=""
+              />
+              <span class="order__item-new">new</span>
+            </a>
+            <span class="order__item-name">Плов из баранины</span>
+            <span class="order__item-price-text">300 гр</span>
+            <span class="order__item-text"
+              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+              помодоро</span
+            >
+            <div class="order__item-price">
+              <div class="order__item-prices">
+                <span class="order__item-new-price">325 р</span>
+                <span class="order__item-old-price">460 р</span>
+              </div>
+              <a href="#" class="red-btn">Заказать</a>
             </div>
-            <a href="#" class="red-btn">Заказать</a>
           </div>
-        </div>
-        <div class="order__item">
-          <a href="#" class="order__item-img">
-            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
-            <span class="order__item-new">new</span>
-          </a>
-          <span class="order__item-name">Плов из баранины</span>
-          <span class="order__item-price-text">300 гр</span>
-          <span class="order__item-text"
-            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-            помодоро</span
-          >
-          <div class="order__item-price">
-            <div class="order__item-prices">
-              <span class="order__item-new-price">325 р</span>
-              <span class="order__item-old-price">460 р</span>
+          <div class="order__item">
+            <a href="#" class="order__item-img">
+              <img
+                class="order__item-bg"
+                src="img/order-slider-img.jpg"
+                alt=""
+              />
+              <span class="order__item-new">new</span>
+            </a>
+            <span class="order__item-name">Плов из баранины</span>
+            <span class="order__item-price-text">300 гр</span>
+            <span class="order__item-text"
+              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+              помодоро</span
+            >
+            <div class="order__item-price">
+              <div class="order__item-prices">
+                <span class="order__item-new-price">325 р</span>
+                <span class="order__item-old-price">460 р</span>
+              </div>
+              <a href="#" class="red-btn">Заказать</a>
             </div>
-            <a href="#" class="red-btn">Заказать</a>
           </div>
-        </div>
-        <div class="order__item">
-          <a href="#" class="order__item-img">
-            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
-            <span class="order__item-new">new</span>
-          </a>
-          <span class="order__item-name">Плов из баранины</span>
-          <span class="order__item-price-text">300 гр</span>
-          <span class="order__item-text"
-            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-            помодоро</span
-          >
-          <div class="order__item-price">
-            <div class="order__item-prices">
-              <span class="order__item-new-price">325 р</span>
-              <span class="order__item-old-price">460 р</span>
+          <div class="order__item">
+            <a href="#" class="order__item-img">
+              <img
+                class="order__item-bg"
+                src="img/order-slider-img.jpg"
+                alt=""
+              />
+              <span class="order__item-new">new</span>
+            </a>
+            <span class="order__item-name">Плов из баранины</span>
+            <span class="order__item-price-text">300 гр</span>
+            <span class="order__item-text"
+              >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
+              помодоро</span
+            >
+            <div class="order__item-price">
+              <div class="order__item-prices">
+                <span class="order__item-new-price">325 р</span>
+                <span class="order__item-old-price">460 р</span>
+              </div>
+              <a href="#" class="red-btn">Заказать</a>
             </div>
-            <a href="#" class="red-btn">Заказать</a>
-          </div>
-        </div>
-        <div class="order__item">
-          <a href="#" class="order__item-img">
-            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
-            <span class="order__item-new">new</span>
-          </a>
-          <span class="order__item-name">Плов из баранины</span>
-          <span class="order__item-price-text">300 гр</span>
-          <span class="order__item-text"
-            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-            помодоро</span
-          >
-          <div class="order__item-price">
-            <div class="order__item-prices">
-              <span class="order__item-new-price">325 р</span>
-              <span class="order__item-old-price">460 р</span>
-            </div>
-            <a href="#" class="red-btn">Заказать</a>
-          </div>
-        </div>
-        <div class="order__item">
-          <a href="#" class="order__item-img">
-            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
-            <span class="order__item-new">new</span>
-          </a>
-          <span class="order__item-name">Плов из баранины</span>
-          <span class="order__item-price-text">300 гр</span>
-          <span class="order__item-text"
-            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-            помодоро</span
-          >
-          <div class="order__item-price">
-            <div class="order__item-prices">
-              <span class="order__item-new-price">325 р</span>
-              <span class="order__item-old-price">460 р</span>
-            </div>
-            <a href="#" class="red-btn">Заказать</a>
-          </div>
-        </div>
-        <div class="order__item">
-          <a href="#" class="order__item-img">
-            <img class="order__item-bg" src="img/order-slider-img.jpg" alt="" />
-            <span class="order__item-new">new</span>
-          </a>
-          <span class="order__item-name">Плов из баранины</span>
-          <span class="order__item-price-text">300 гр</span>
-          <span class="order__item-text"
-            >Колбаса пепперони, томат, оливки, сыр моцарелла, соус
-            помодоро</span
-          >
-          <div class="order__item-price">
-            <div class="order__item-prices">
-              <span class="order__item-new-price">325 р</span>
-              <span class="order__item-old-price">460 р</span>
-            </div>
-            <a href="#" class="red-btn">Заказать</a>
           </div>
         </div>
       </div>
