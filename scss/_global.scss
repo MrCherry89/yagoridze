@@ -62,6 +62,34 @@ button {
   }
 }
 
+.red-btn {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  padding: 15px 30px;
+  @include flex;
+  @include align-center;
+  @include justify-center;
+  background: $red;
+  box-shadow: 2px 2px 0px $black, 4px 4px 0px $red;
+  border-radius: 10px;
+  @media (max-width: 1500px) {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  @media (max-width: 961px) {
+    font-size: 14px;
+  }
+  @media (max-width: 576px) {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  &:hover {
+    box-shadow: none;
+    background: lighten($red, 10%);
+  }
+}
+
 .main__title-wrap {
   padding: 20px 15px 10px;
   @media (min-width: 576px) {

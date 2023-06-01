@@ -44,17 +44,49 @@ $(document).ready(function () {
     checkScreenSize();
   });
 
-  checkScreenSize();
+  $(".card__order-count .btn-minus").addClass("btn-disabled");
 
-  // function checkScreenSize() {
-  //   var newWindowWidth = $(window).width();
-  //   if (newWindowWidth < 1281) {
-  //     $(".header__basket").on("click", function () {
-  //       $(".header__basket-info").toggleClass("open");
-  //     });
-  //   } else {
-  //   }
-  // }
+  $(".card__order-count .input-number").on("change", function () {
+    if ($(this).val() == 1) {
+      $(this)
+        .closest(".card__order-count")
+        .find(".btn-minus")
+        .addClass("btn-disabled");
+    } else {
+      $(this)
+        .closest(".card__order-count")
+        .find(".btn-minus")
+        .removeClass("btn-disabled");
+    }
+  });
+
+  $(".btn-minus").on("click", function (e) {
+    e.preventDefault();
+    var number =
+      parseInt(
+        $(this).closest(".card__order-count").find(".input-number").val()
+      ) - 1;
+    $(this)
+      .closest(".card__order-count")
+      .find(".input-number")
+      .val(number > 0 ? number : 1)
+      .change();
+  });
+
+  $(".btn-plus").on("click", function (e) {
+    e.preventDefault();
+    var number =
+      parseInt(
+        $(this).closest(".card__order-count").find(".input-number").val()
+      ) + 1;
+    $(this)
+      .closest(".card__order-count")
+      .find(".input-number")
+      .val(number)
+      .change();
+  });
+
+  checkScreenSize();
 
   function checkScreenSize() {
     var newWindowWidth = $(window).width();
