@@ -5805,6 +5805,19 @@ button:focus {
   line-height: 20px;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .basket__left .sauces__title {
+    font-size: 30px;
+    line-height: 110%;
+  }
+}
+@media (min-width: 1280px) {
+  .basket__left .sauces__title {
+    font-size: 45px;
+    line-height: 110%;
+    margin-bottom: 30px;
+  }
+}
 .basket__left .sauces__bold {
   font-weight: 700;
   font-size: 15px;
@@ -5836,6 +5849,11 @@ button:focus {
 @media (min-width: 768px) {
   .basket__left .sauces__items {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) {
+  .basket__left .sauces__items {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 .basket__left .sauces__item {
@@ -5987,6 +6005,11 @@ button:focus {
     position: absolute;
     bottom: 20px;
     right: 0px;
+  }
+}
+@media (min-width: 1280px) {
+  .basket__right .recommend-item .red-btn {
+    font-size: 16px;
   }
 }
 .basket__right .recommend-item-img-wrap {
