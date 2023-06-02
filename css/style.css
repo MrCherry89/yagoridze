@@ -961,6 +961,9 @@ button:focus {
     margin-bottom: 10px;
   }
 }
+.promotions__title .price {
+  font-family: "Adigiana 2";
+}
 .promotions__title_small {
   font-size: 60px;
   line-height: 50px;
