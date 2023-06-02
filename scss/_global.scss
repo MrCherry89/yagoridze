@@ -154,7 +154,7 @@ button {
   }
   &:hover {
     box-shadow: none;
-    background: lighten($red, 10%);
+    background: lighten(#8bc43f, 10%);
   }
 }
 
@@ -188,7 +188,7 @@ button {
   }
   &:hover {
     box-shadow: none;
-    background: lighten($red, 10%);
+    background: lighten($orange, 10%);
   }
 }
 

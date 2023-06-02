@@ -178,7 +178,7 @@ button:focus {
 }
 .green-btn:hover {
   box-shadow: none;
-  background: #ff0606;
+  background: #a3d066;
 }
 
 .orange-btn {
@@ -223,7 +223,7 @@ button:focus {
 }
 .orange-btn:hover {
   box-shadow: none;
-  background: #ff0606;
+  background: #f48d50;
 }
 
 .main__title-wrap {
