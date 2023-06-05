@@ -104,6 +104,7 @@ $(document).ready(function () {
   $(".phone-number-input").inputmask({
     mask: "+7 (999)-999-99-99",
   });
+
   $(".ordering__form").validate({
     rules: {
       phone: {
@@ -131,5 +132,10 @@ $(document).ready(function () {
     var index = $(this).closest("li").index();
     $(".tab-content2 .tab-content-item").removeClass("active");
     $(".tab-content2 .tab-content-item").eq(index).addClass("active");
+  });
+
+  $(".popup").magnificPopup({
+    type: "inline",
+    mainClass: "mfp-fade",
   });
 });

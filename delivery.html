@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -396,7 +397,7 @@
 
     <div class="delivery">
       <div class="delivery__buttons">
-        <a href="#" class="red2-btn">
+        <a href="#order-call-popup" class="red2-btn popup">
           <img src="img/btn-icon1.svg" alt="" /> Заказать на сайте
         </a>
         <a href="#" class="green-btn">
@@ -640,7 +641,9 @@
             <div class="gift-progress__info-text">
               <img src="img/gift.svg" alt="" /> Ваш подарок
             </div>
-            <span class="gift-progress__info-btn">Что это?</span>
+            <a href="#gift-popup" class="gift-progress__info-btn popup"
+              >Что это?</a
+            >
           </div>
 
           <div class="gift-progress__size">
@@ -766,5 +769,124 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/script.js"></script>
+
+    <div
+      id="order-call-popup"
+      class="mfp-hide white-popup mfp-with-anim main-popup main-popup"
+    >
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="popup-info">
+          <h3 class="popup-info__title">Закажите обратный звонок</h3>
+          <form class="popup-info__form">
+            <input type="text" placeholder="Имя" />
+            <input
+              type="tel"
+              name="phone"
+              class="phone-number-input"
+              placeholder="Телефон"
+            />
+            <div class="checkbox-wrap">
+              <label>
+                <input type="checkbox" checked />
+                <span></span>
+                <p>
+                  Я ОЗНАКОМЛЕН(А) С СОДЕРЖАНИЕМ ПОЛЬЗОВАТЕЛЬСКОГО СОГЛАШЕНИЯ И
+                  ПРИНИМАЮ УСЛОВИЯ ОБРАБОТКИ <a href="#">ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
+                </p>
+              </label>
+            </div>
+            <button class="red-btn">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="gift-popup"
+      class="mfp-hide white-popup mfp-with-anim main-popup main-popup"
+    >
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="gift-popup-info">
+          <h3 class="gift-popup-info__title">
+            <img src="img/gift-green.png" alt="" /> Подарок!
+          </h3>
+          <p class="gift-popup-info__subtitle">
+            Заказывайте и получайте подарочные блюда в зависимости от суммы
+            заказа. Акция не распространяется на товары уже с включенной скидкой
+            и действует только при заказе на сайте
+          </p>
+          <div class="gift-info-item">
+            <div class="gift-info-item__text">
+              <img src="img/gift-icon1.svg" alt="" />
+              <span class="gift-info-item__green-text">Подарок от 1 000 Р</span>
+            </div>
+            <div class="gift-info-item__products">
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+            </div>
+          </div>
+          <div class="gift-info-item">
+            <div class="gift-info-item__text">
+              <img src="img/gift-icon2.svg" alt="" />
+              <span class="gift-info-item__orange-text">Подарок от 2000 Р</span>
+            </div>
+            <div class="gift-info-item__products">
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+            </div>
+          </div>
+          <div class="gift-info-item">
+            <div class="gift-info-item__text">
+              <img src="img/gift-icon3.svg" alt="" />
+              <span class="gift-info-item__red-text">Подарок от 1 000 Р</span>
+            </div>
+            <div class="gift-info-item__products">
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+              <div class="gift-info-item__product">
+                <img src="img/gift-product-img.png" alt="" />
+                <span>Рулетики из баклажанов с сыром</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -722,6 +722,8 @@
     display: none;
     @media (min-width: 768px) {
       display: inline-block;
+      color: white;
+      text-decoration: underline;
     }
     @media (min-width: 960px) {
       font-size: 15px;
@@ -3828,8 +3830,6 @@
           margin-bottom: 40px;
         }
       }
-      &__texts {
-      }
       &__title {
         font-weight: 700;
         font-size: 20px;
@@ -4310,8 +4310,6 @@
         }
       }
     }
-  }
-  &__info {
   }
   &__items {
     @media (min-width: 1500px) {
