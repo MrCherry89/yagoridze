@@ -3444,6 +3444,49 @@ button:focus {
   }
 }
 
+.order__slider .order__item {
+  min-height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .order__slider .order__item {
+    min-height: 330px;
+  }
+}
+@media (min-width: 1280px) {
+  .order__slider .order__item {
+    min-height: 390px;
+  }
+}
+@media (min-width: 1500px) {
+  .order__slider .order__item {
+    min-height: 480px;
+  }
+}
+.order__slider .order__item .order-item__texts {
+  height: calc(100% - 130px);
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.order__slider .order__item .order-item__texts .order__item-price {
+  margin-top: auto;
+}
+.order__slider .order__item .order-item__texts .order__item-text {
+  margin-bottom: 10px;
+}
+
 .order__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4463,10 +4506,10 @@ button:focus {
 .header__info-item:hover .header__info-item-text {
   color: #8bc43f;
 }
-.header__info-item:hover svg {
+.header__info-item:hover .header__info-item-icon svg {
   fill: #8bc43f;
 }
-.header__info-item:hover svg.path path {
+.header__info-item:hover .header__info-item-icon svg.path path {
   fill: #8bc43f;
   stroke: #8bc43f;
 }
